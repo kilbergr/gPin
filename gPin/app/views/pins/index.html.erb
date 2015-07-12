@@ -5,7 +5,13 @@
 	<p><img width="190px" src="<%= pin.imageURL %>"></p>
 	
 	<h4><%= pin.pinName %></h4>
-	<p><a href="<%= pin.url %>">Visit Pin's URL</a></p>
-	<p><a href="pins/<%= pin.id %>/">More on this pin</a></p>
+	<p><a href="<%= pin.url %>"><button>Visit Pin's URL</button></a></p>
+	<button class="showComments">Click for Comments</button>
+		<div class="comments">
+			<p><%= pin.comment %></p>
+			<button class="hideComments">Hide Comments</button>
+		</div>
+
+	<p><a href="pins/<%= pin.id %>/"><button>More on this pin</button></a></p>
 	</div>
 	<% end %>
