@@ -1,3 +1,53 @@
 // Place all the styles related to the pins controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+	body{
+	color: gray;
+	font-size: 18px;
+	font-family: 'Josefin Sans'
+}
+#heading {
+	/*background-color:#d3d3d3;*/
+	color: red;
+	font-family: 'Lobster Two';
+	font-size: 28px;
+	text-align: center;
+	border-top: solid #d3d3d3 3px;
+	border-bottom:  solid #d3d3d3 3px;
+}
+
+#nav {
+	color: gray;
+	font-family: 'Josefin Sans';
+	font-size: 18px;
+	float:right;
+  margin-top: -20px;
+  margin-right: 20px;
+  list-style-type: none;
+}
+
+.no-link{
+	text-decoration: none;
+}
+
+h1  {
+	color: gray;
+	font-size: 28px;
+	font-family: 'Josefin Sans'
+}
+
+h4 {
+	color: gray;
+	font-size: 24px;
+	font-family: 'Josefin Sans'
+
+}
+
+.pin {
+	border: solid #d3d3d3 2px;
+	float: right;
+	margin: 10px;
+	padding: 10px;
+	width: 200px;
+	text-align: center;
+}

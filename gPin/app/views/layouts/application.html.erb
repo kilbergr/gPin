@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>GPin</title>
+  <title>gPin</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+ <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:600|Lobster+Two:700' rel='stylesheet' type='text/css'>
 </head>
 <body>
+	<div id="heading">
+	g-Pinterest
+			<div >	
+			<ul id="nav">
 
+				<li class="no-link"><a href="/pins/new">NEW PIN</a></li>
+
+			</ul>
+				
+			</div>
+
+	</div>
+<div>
 <%= yield %>
-
+</div>
 </body>
 </html>

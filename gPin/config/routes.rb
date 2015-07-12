@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   patch 'pins/:id', to: 'pins#update'
   put 'pins/:id', to: 'pins#update'
   delete 'pins/:id', to: 'pins#destroy'
+  delete '/pins', to: 'pins#destroyAll'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
