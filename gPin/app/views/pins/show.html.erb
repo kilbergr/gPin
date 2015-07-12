@@ -1,0 +1,7 @@
+<h3><%= @pin.pinName %></h3>
+<p><a href="<%= @pin.url %>">Visit URL</a></p>
+<p>My Comment: <%= @pin.comment %></p>
+<p><img width="100px" src="<%= @pin.imageURL %>" alt="Pin Image"></p>
+<p><a href="/pins/<%= @pin.id %>/edit">Edit this pin</a> 
+<%= link_to 'Delete Pin',  @pin,  method: :delete%></p>
+<p><a href="/pins"><button>Back Home</button></a></p>

@@ -1,0 +1,8 @@
+<h1>Check out my pins</h1>
+<a href="/pins/new">New Pin</a>
+<% @pins.each do |pin| %>
+<h4><%= pin.pinName %></h4>
+	<p><a href="<%= pin.url %>">Visit Pin's URL</a></p>
+	<p><img width="100px" src="<%= pin.imageURL %>"></p>
+	<p><a href="pins/<%= pin.id %>/">More on this pin</a></p>
+	<% end %>

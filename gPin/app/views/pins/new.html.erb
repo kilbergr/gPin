@@ -1,0 +1,13 @@
+<h3>Add a Pin</h3>
+
+<%= form_for @pin do |f| %>
+		<%= f.label "Pin" %>
+		<%= f.text_field :pinName %><br/>
+    <%= f.label "URL" %>
+    <%= f.text_field :url%><br />
+    <%= f.label "Comment" %>
+		<%= f.text_field :comment %><br/>
+    <%= f.label "Image Url" %>
+    <%= f.text_field :imageURL%><br />
+    <%= f.submit "Add Pin" %>
+<% end %>
