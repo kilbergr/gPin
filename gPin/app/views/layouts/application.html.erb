@@ -6,7 +6,6 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
  <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:600|Lobster+Two:700' rel='stylesheet' type='text/css'>
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
 <body>
 	<div id="heading">
@@ -15,12 +14,23 @@
 
 				<li class="no-link"><%= link_to "HOME", pins_path %></li>
 				<li class="no-link">  |  </li>
-					<li class="no-link"><%= link_to "NEW PIN", pins_new_path%></li>
+				<li class="no-link"><%= link_to "NEW PIN", pins_new_path%></li>
 
 			</ul>
 
 	</div>
 <div>
+
+<% flash.each do |key, value| %>
+  <% if key == "notice" %>
+    <%= content_tag :div, value, class: "notice" %>
+  <% elsif key == "alert" %>
+    <%= content_tag :div, value, class: "alert" %>
+  <% else %>
+    <%= content_tag :div, value, class: "success" %>
+  <% end %>
+<% end %>
+
 <%= yield %>
 </div>
 </body>

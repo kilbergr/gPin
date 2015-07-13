@@ -109,3 +109,30 @@ button:hover {
 .field_with_errors {
 	box-shadow: 10px 3px 15px red; 
 }
+
+.notice{
+	text-align: center;
+	background-color: #FFFFCC;
+	font-family: 'Josefin Sans';
+	color: #996600;
+	padding: 10px;
+	margin: 2px;
+}
+
+.alert{
+	text-align: center;
+	background-color: #FF9999;
+	font-family: 'Josefin Sans';
+	color: #FF0000;
+	padding: 10px;
+	margin: 2px;
+}
+
+.success{
+	text-align: center;
+	background-color: #CCFFCC;
+	font-family: 'Josefin Sans';
+	color: #336600;
+	padding: 10px;
+	margin: 2px;
+}

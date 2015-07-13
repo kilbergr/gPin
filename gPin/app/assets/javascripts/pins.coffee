@@ -9,3 +9,5 @@ $(document).ready ->
     comments = $(this).parent(".comments")
     comments.css "display", "none"
     comments.prev(".showComments").css "display", "inline"
+
+   

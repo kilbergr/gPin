@@ -13,7 +13,7 @@ class PinsController < ApplicationController
 		@pin = Pin.new(pin_params)
 		@pin.save #this line unnecessary
 		if @pin.save
-			redirect_to pins_path
+			redirect_to pins_path, flash: {success: "Successfully Created New Pin"}
 		else
 			#show me new page again
 			render :new
@@ -34,7 +34,7 @@ class PinsController < ApplicationController
 		#this line unnecessary 
 		@pin.update pin_params #could instead by @pin.save
 		if @pin.update pin_params
-			redirect_to pin_path @pin
+			redirect_to pin_path(@pin), notice: "Successfully Updated Pin"
 		else
 			render :edit
 		end
@@ -43,7 +43,7 @@ class PinsController < ApplicationController
 	def destroy
 		pin = Pin.find(params[:id])
 		pin.destroy
-		redirect_to pins_path
+		redirect_to pins_path, alert: "Deleted Pin"
 	end
 
 	def destroyAll
