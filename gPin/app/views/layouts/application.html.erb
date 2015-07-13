@@ -12,9 +12,10 @@
 	<div id="heading">
 	g-Pinterest
 			<ul id="nav">
-				<li class="no-link"><a href="/">HOME</a></li>
+
+				<li class="no-link"><%= link_to "HOME", pins_path %></li>
 				<li class="no-link">  |  </li>
-				<li class="no-link"><a href="/pins/new"> NEW PIN</a></li>
+					<li class="no-link"><%= link_to "NEW PIN", pins_new_path%></li>
 
 			</ul>
 

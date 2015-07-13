@@ -105,3 +105,7 @@ button:hover {
 	font-family: 'Josefin Sans';
 	font-size:14px;
 }
+
+.field_with_errors {
+	box-shadow: 10px 3px 15px red; 
+}

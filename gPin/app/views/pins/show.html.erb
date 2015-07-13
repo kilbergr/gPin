@@ -5,5 +5,5 @@
 <p>My Comment: <%= @pin.comment %></p>
 <p><a href="<%= @pin.url %>"><button>Visit URL</button></a>
 <a href="/pins/<%= @pin.id %>/edit"><button>Edit this pin</button></a> 
-<%= link_to 'Delete Pin',  @pin,  method: :delete, :class => 'button'%></p>
+<%= link_to 'Delete Pin',  @pin,  method: :delete, data: {confirm: "Are you sure you want to delete this pin?"}, :class => 'button'%></p>
 <p><a href="/pins"><button>Back Home</button></a></p>
